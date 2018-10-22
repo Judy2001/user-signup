@@ -41,7 +41,7 @@ def validation():
     if email == '':
         email == email
     else:
-        if len(email) <3 or len(email) >20:
+        if email != ' ' and len(email) <3 or len(email) >20:
             emailError = "Email should be between 3 and 20 characters in length"
         elif '@' not in email or '.' not in email:
             email == ''
